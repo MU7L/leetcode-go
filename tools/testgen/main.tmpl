@@ -1,0 +1,12 @@
+package main
+
+import (
+	"fmt"
+	"leetcode-go/lib"
+)
+
+func main() {
+	{{range .}}fmt.Println({{.FuncName}}({{range .Inputs}}
+		lib.JSONParse[{{.ParamType}}](`{{.ParamValue}}`),{{end}}
+	)){{end}}
+}
