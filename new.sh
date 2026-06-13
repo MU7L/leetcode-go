@@ -11,6 +11,8 @@ mkdir -p "$dir_name"
 cat > "$dir_name/solution.go" << EOF
 package main
 
+//go:generate ../../testgen ./solution.go
+
 // @input
 // @want
 

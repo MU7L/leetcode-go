@@ -7,6 +7,7 @@ import (
 
 func main() {
 	fmt.Println(maxTotalValue(
-		lib.JSONParse[[]int]("[1,2]"),lib.JSONParse[int]("3"),
+		lib.JSONParse[[]int](`[1,2]`),
+		lib.JSONParse[int](`3`),
 	))
 }
