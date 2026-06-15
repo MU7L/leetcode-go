@@ -53,3 +53,8 @@ func mapWordWeights(words []string, weights []int) string {
 1. 脚本首先执行 `go generate` ，调用 Step.0 中构建的 testgen 来生成测试入口文件
 2. 测试入口文件将位于 `./solutions/{no}/main.go`，本质上是将测试用例传入到函数，并打印返回值
 3. 脚本最后执行 `go run`，终端打印最终的执行结果
+
+## TODO
+
+- 当前版本只有测试结果输出，结果对比待开发
+- 未支持复杂输入输出（树、链表、图）
